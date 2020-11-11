@@ -119,10 +119,6 @@ cite {
   border-bottom: 1px solid var(--grey);
 }
 
-/* #chercherVille {
-  display: none;
-} */
-
 .sr-only {
   position:absolute;
   left:-10000px;
