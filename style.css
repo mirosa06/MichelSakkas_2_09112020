@@ -119,9 +119,18 @@ cite {
   border-bottom: 1px solid var(--grey);
 }
 
-#chercherVille {
+/* #chercherVille {
   display: none;
-}
+} */
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  }
 
 #search::placeholder {
   padding-left: 15px;

@@ -3,18 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content="Reservia | Trouvez un hébergement pour les vacances">
+        <meta name=" description" content="Trouvez votre hébergement pour des vacances de rêve">
+        <meta name=" author" content=" Michel Sakkas"/>
+        <meta name="robots" content="nofollow" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style.css">
-        <script
-            src="https://kit.fontawesome.com/6fd2010910.js"
-            crossorigin="anonymous"
-            defer
-        ></script>
-        <title>Reservia</title>
+        <title>Reservia | Trouvez un hébergement pour les vacances</title>
     </head>
     <body>
         <header class="container">
@@ -36,7 +35,7 @@
             </nav>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <cite>En plein centre ville ou en pleine nature</cite>
-            <div class="search">
+            <form class="search">
                 <i id="marker" class="fas fa-map-marker-alt"></i>
                     <input
                         id="search"
@@ -44,9 +43,9 @@
                         size="32"
                         placeholder="Marseille, France"
                     />
-                    <label id="chercherVille">Trouver un hébergement</label>
+                    <label class="sr-only">Trouver un hébergement</label>
                 <button id="rechercher">Rechercher</button>
-            </div>
+            </form>
             <div class="filtres">
                 <ul>
                     <li>
@@ -85,6 +84,8 @@
                 <p>Plus de 500 logements sont disponibles dans cette ville.</p>
             </div>
         </header>
+
+        <main>
 
         <section class="s1 container">
           
@@ -259,6 +260,9 @@
         <section class="s2">
             <article class="b"></article>
         </section>
+
+    </main>
+
         <footer>
             <div class="table ">
                 <class="Rtable-element">
@@ -288,4 +292,9 @@
             </div>
         </footer>
     </body>
+    <script
+        src="https://kit.fontawesome.com/6fd2010910.js"
+        crossorigin="anonymous"
+        defer
+    ></script>
 </html>
