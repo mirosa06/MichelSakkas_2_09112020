@@ -11,6 +11,7 @@ html {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: var(--deepblue);
+  scroll-behavior: smooth;
 }
 
 body{
