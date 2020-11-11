@@ -269,7 +269,20 @@ h2 {
   margin: 20px;
   background: white;
   border-radius: 25px;
-  
+  text-decoration: none;
+  color: var(--deepblue);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-shadow {
+  color: var(--deepblue);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: transform 0.2s;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.05);
 }
 
 .card img {
@@ -334,13 +347,13 @@ h2 {
   border-radius: 25px;
 }
 
-.aside--title {
+.aside-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-h3 {
+h2 {
   font-size: 24px;
   font-weight: 800;
   margin-top: 20px;
@@ -356,22 +369,27 @@ h3 {
 .fa-chart-line {
   font-size: 26px;
 }
-
-/* ASIDE CARD */
-
-.card--aside {
+                  /* ASIDE CARD */
+.card-aside {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 360px;
   height: 140px;
-  margin: 20px;
-  margin-left: 50px;
+  margin: 20px 20px 20px 50px;
   background: white;
   border-radius: 25px;
+  text-decoration: none;
 }
 
-.card--aside img {
+.card-aside-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 25px;
+}
+
+.card-aside-image {
   max-width: 125px;
   max-height: 125px;
   object-fit: cover;
@@ -380,14 +398,33 @@ h3 {
   border-bottom-left-radius: 22px;
 }
 
-.card--aside-description {
-  margin-right: 25px;
+.card-aside-image--portrait {
+  width: 90%; 
+  height: 90%;
+}
+
+.card-aside-body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.card-aside-body p {
+  margin: 0;
+  padding: 0;
 }
 
 .card-title--aside {
   font-size: 16px;
   font-weight: 800;
 }
+
+.card-aside-body--price {
+  padding-bottom: 25px;
+}
+
 
 /* ACTIVITES */
 
