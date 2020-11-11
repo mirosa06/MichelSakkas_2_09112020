@@ -119,6 +119,14 @@ cite {
   border-bottom: 1px solid var(--grey);
 }
 
+#search:focus {
+  border: 2px solid var(--primary   );
+}
+
+input:focus{
+  background-color: var(--secondary);
+}
+
 .sr-only {
   position:absolute;
   left:-10000px;
@@ -278,6 +286,7 @@ h2 {
   border-radius: 25px;
   text-decoration: none;
   color: var(--deepblue);
+  cursor: pointer;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
