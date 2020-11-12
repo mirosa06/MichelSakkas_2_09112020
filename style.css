@@ -84,7 +84,11 @@ nav ul li {
 #a--hebergements {
   text-decoration: none;
   color: var(--primary);
-  ;
+}
+
+#a--activites {
+  text-decoration: none;
+  color: var(--deepblue);
 }
 
 #inscription{
@@ -248,7 +252,7 @@ input:focus{
   font-weight: 500;
 }
 
-/* HEBERGEMENTS */
+/* HEBERGEMENTS  HEBERGEMENTS HEBERGEMENTS HEBERGEMENTS HEBERGEMENTS */
 
 section.s1 {
   margin-top: 25px;
@@ -294,6 +298,7 @@ h2 {
 .card-shadow:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .card img {
@@ -348,7 +353,7 @@ h2 {
   padding-bottom: 50px;
 }
 
-/* ASIDE */
+/* ASIDE  ASIDE ASIDE ASIDE ASIDE */
 
 .aside {
   display: flex;
@@ -437,12 +442,83 @@ h2 {
 }
 
 
-/* ACTIVITES */
+/* ACTIVITES  ACTIVITES  ACTIVITES  ACTIVITES  ACTIVITES  ACTIVITES */
 
-section.s2{
-  min-height: 150px;
-  
-  
+.s2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  padding-left: 20px;
+}
+
+.act h2{
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.act a {
+  text-decoration: none;
+  color: var(--deepblue);
+}
+
+.arts2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.card-activite {
+  display: flex;
+  flex-flow: column wrap;
+  /* justify-content: space-between; */
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+
+
+.card-activite img{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.card-bundled{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small {
+  height: min-content;
+}
+
+.small img{
+  height: 160px;
+}
+
+.small-min img {
+  height: 100px;
+  object-position: top;
+}
+
+.p-activite {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-top: 25px;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 /* FOOTER */
