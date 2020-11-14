@@ -278,25 +278,36 @@ input:focus{
 
 /* HEBERGEMENTS  HEBERGEMENTS HEBERGEMENTS HEBERGEMENTS HEBERGEMENTS */
 
+.centrale {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 section.s1 {
   margin-top: 25px;
   display: flex;
   flex-direction: row;
 }
 
-h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 75px;
+.noshow {
+  display: none;
 }
 
 .gallery {
-  width: 59%;
+  flex-grow: 2;
   text-align: center;
   background: var(--grey);
   margin-right: 1%;
   border-radius: 25px;
+}
+
+h2#Hebergements {
+  
+  text-align: left;
+  padding-top: 20px;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 35px;
 }
 
 .card {
@@ -310,7 +321,6 @@ h2 {
   border-radius: 25px;
   text-decoration: none;
   color: var(--deepblue);
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .card-shadow {
@@ -608,7 +618,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1126px) {
 
   
   .flex-nav-top {
@@ -657,6 +667,16 @@ li.inactive.flex-nav {
 .filtre-element {
   
   margin-bottom: 10px;
+}
+
+.gallery {
+  max-width: 480px;
+  order: 0;
+}
+
+aside.aside {
+  max-width: 480px;
+  order: 1;
 }
 
 }
