@@ -31,20 +31,24 @@
                         alt="logo Reservia"
                     />
                 </div>
-                <ul>
-                    <li class="active">
+                <ul class="flex-nav-top">
+                    <li class="flex-nav" id="inscription">S'inscrire</li>
+                </ul>
+                <div class="break"></div>
+                <!-- break -->
+                <ul class="flex-nav-bottom">
+                    <li class="active flex-nav">
                         <a id="a--hebergements" href="#Hebergements"
                             >Hébergements</a
                         >
                     </li>
-                    <li>
+                    <li class="inactive flex-nav">
                         <a id="a--activites" href="#activites">Activités</a>
                     </li>
-                    <li id="inscription">S'inscrire</li>
                 </ul>
             </nav>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <cite>En plein centre ville ou en pleine nature</cite>
+            <div class="cite">En plein centre ville ou en pleine nature</div>
             <form class="search">
                 <i id="marker" class="fas fa-map-marker-alt"></i>
                 <label class="sr-only">Trouver un hébergement</label>
@@ -61,25 +65,25 @@
                     <li>
                         <p id="filtre--titre">Filtres</p>
                     </li>
-                    <li>
+                    <li class="filtre-element">
                         <div class="filtre-wrapper">
                             <i class="fas fa-money-bill-wave"></i>
                         </div>
                         <a href="" class="hvr-bounce-to-right">Economique</a>
                     </li>
-                    <li>
+                    <li class="filtre-element">
                         <div class="filtre-wrapper">
                             <i class="fas fa-child"></i>
                         </div>
                         <a href="" class="hvr-bounce-to-right">Familial </a>
                     </li>
-                    <li>
+                    <li class="filtre-element">
                         <div class="filtre-wrapper">
                             <i class="fas fa-heart"></i>
                         </div>
                         <a href="" class="hvr-bounce-to-right">Romantique</a>
                     </li>
-                    <li>
+                    <li class="filtre-element">
                         <div class="filtre-wrapper">
                             <i class="fas fa-dog"></i>
                         </div>
