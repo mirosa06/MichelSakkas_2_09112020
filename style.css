@@ -159,17 +159,19 @@ input:focus{
   height:1px;
   overflow:hidden;
   }
- 
+
   input#search::placeholder {
-    padding-left: 15px;
-    color: #02025c;
-    font-size: 18px;
-    font-weight: 700;
+    color:  var(--deepblue) !important;
+    opacity: 1;
   }
 
-  input#search::-moz-placeholder {
+  /* input#search::-moz-placeholder {
+    color:  #02025c !important;
+    
+  } */
+ 
+  input#search {
     padding-left: 15px;
-    color: #02025c;
     font-size: 18px;
     font-weight: 700;
   }
