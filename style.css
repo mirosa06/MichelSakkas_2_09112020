@@ -7,7 +7,10 @@
   --deepblue: #02025c;
 } 
 
+*, *::before, *::after {box-sizing: inherit;}
+
 html {
+  box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: var(--deepblue);
