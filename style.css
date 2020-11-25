@@ -38,7 +38,6 @@ h1{
   min-height: 150px;
 }
 
-
 #header {
   display:flex;
   flex-flow: column nowrap;
@@ -65,26 +64,24 @@ li:nth-child(3) {
 
 #filtres{
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
-
-
-#filtres-ul{
+/* #filtres-ul{
   display: flex;
   flex-direction: row;
   list-style-type: none;
-}
+} */
 
 .filtre-element{
   display: flex;
   padding: 1rem;
 }
 
-#filtre-titre{
+/* #filtre-titre{
   order: -1;
   padding-left: 0 !important;
-}
+} */
 
 .filtre-wrapper {
   display: flex;
@@ -130,7 +127,6 @@ margin-top: -5px;
 
 .gallery-title {
   flex-basis: 100%;
-  
 }
 
 .gallery-title, #aside-title, #submain-title{
@@ -178,9 +174,7 @@ aside {
 #aside-cards{
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  /* padding-top: 20px; */
-  
+  align-items: center;  
 }
 
 .aside-card{
@@ -194,7 +188,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 150px;
+  padding-bottom: 3rem;
 }
 
 #submain-title{
@@ -250,8 +244,6 @@ aside {
   align-content: flex-start;
 }
 
-
-
 .table-header {
   font-size: 1.2rem;
   font-weight: 700;
@@ -267,16 +259,102 @@ aside {
   body {
     background-color: purple;    /* phone background */
   }
+
+  .table{
+    flex-direction: column;
+  }
 } 
   
 @media screen and (min-width: 481px) and (max-width: 780px) {
     body{
       background-color: yellow;   /* tablet background */
     }
-}    
+    h1{
+      font-size: 1.1rem;
+    }
+
+    #filtres-ul{
+      flex-flow: column wrap;
+      padding-top: 1.5rem;
+    }
+    #filtres-li{
+      display: flex;
+      flex-direction: row;
+    }
     
-@media screen and (min-width: 781px) {
+    .filtre-element{
+      padding: 0 .5rem;
+    }
+
+    #info{
+      margin-top: 1.5rem;
+    }
+    #gallery{
+      width: 100vw;
+      margin-top: 2rem;
+    }
+    #aside{
+      margin-left: 0;
+      order: -1;
+      padding-bottom: 2rem;
+    }
+    #box-wrapper{
+      flex-direction: column;
+      width: 100vw;
+    }
+    #box-one{
+      flex-flow: row wrap;
+      width: 100vw;
+    }
+    #box-two{
+      flex-flow: row wrap;
+      width: 100vw;
+    }
+    .table {
+      max-width: 100%;
+      padding-left: 1rem;
+    }
+    .table-header{
+      font-size: 1rem;
+    }
+    .table-col{
+      justify-content: space-between;
+    }
+}    
+
+@media screen and (min-width: 781px) and (max-width: 1260px) {
+  body{
+    background-color: rgb(158, 247, 188);   /* tablet background */
+  }
+  #gallery{
+    width: 100vw;
+    margin-top: 2rem;
+  }
+  #aside{
+    margin-left: 0;
+    order: -1;
+    padding-bottom: 2rem;
+  }
+  #box-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  #box-one{
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  #box-two{
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  .table {
+    max-width: 100%;
+    justify-content: space-evenly;
+  }
+} 
+    
+@media screen and (min-width: 1261px) {
     body{
       background-color: beige;     /* computer background */
-    }  
+    }      
   }
