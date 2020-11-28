@@ -501,9 +501,10 @@ aside {
 
   #rechercher{
     position: absolute;
-    margin-top: 5px;
+    line-height: 2rem;
+    /* margin-top: 5px; */
     margin-left: -8px;
-    padding: 5px 10px;
+    padding: 9px 18px;
     background-color: var(--primary);
     border: none;
     border-radius: 10px;
