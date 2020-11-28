@@ -512,7 +512,7 @@ aside {
   
 @media screen and (min-width: 481px) and (max-width: 780px) {
     body{
-      background-color: yellow;   /* tablet background */
+      background-color:white;   /* tablet background */
     }
     h1{
       font-size: 1.1rem;
@@ -525,6 +525,10 @@ aside {
     #filtres-li{
       display: flex;
       flex-direction: row;
+    }
+
+    #filtres-ul i{
+      margin-left: -10px;
     }
     
     .filtre-element{
@@ -567,7 +571,7 @@ aside {
     }
 }    
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1000px) {
   
   ul#filtres-ul{
     display: flex;
