@@ -290,9 +290,74 @@ i.fas.fa-info{
 
 .gallery-card{
   width: 300px;
-  height: 400px;
-  background: salmon;
+  height: 250px;
+  text-align: center;
+  /* background: salmon; */
   margin-top: 30px;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+  height: 210px;
+  margin: 20px;
+  background: white;
+  border-radius: 25px;
+  text-decoration: none;
+  color: var(--deepblue);
+}
+
+.card-shadow {
+  color: var(--deepblue);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: transform 0.2s;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card img {
+  object-fit: cover;
+  max-width: 425px;
+  max-height: 120px;
+  margin: 4px 8px 0 8px;
+  border-radius: 22px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: start;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.card p {
+  display: flex;
+  justify-content: start;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.stars {
+  display: flex;
+  justify-content: start;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: var(--grey);
+}
+
+.checked {
+  color: var(--primary);
 }
 
 aside {
@@ -318,9 +383,69 @@ aside {
 .aside-card{
   width: 400px;
   height: 200px;
-  background: plum;
+  /* background: plum; */
   margin-top: 30px;
 }
+
+                  /* ASIDE CARD */
+                  .card-aside {
+                    display: flex;
+                    margin: 20px 20px;
+                    background: white;
+                    border-radius: 25px;
+                    text-decoration: none;
+                  }
+                  
+                  .card-aside-container{
+                    display: flex;
+                    margin-right: 25px;
+                  }
+                  
+                  .card-aside-image {
+                    max-width: 150px;
+                    max-height: 150px;
+                    object-fit: cover;
+                    margin: 8px;
+                    border-top-left-radius: 22px;
+                    border-bottom-left-radius: 22px;
+                  }
+                  
+                  img.card-aside-image--portrait {
+                    width: 150px; 
+                    height: 88%;
+                  }
+                  
+                  .card-aside-body {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-around;
+                    padding-left: 15px;
+                    padding-top: 20px;
+                  }
+                  
+                  .card-aside-body p {
+                    margin: 0;
+                    padding: 0;
+                  }
+                  
+                  .card-aside-title {
+                    font-size: 16px;
+                    font-weight: 800;
+                  }
+                  
+                  .card-aside-body--price {
+                    padding-bottom: 25px;
+                  }
+                  
+                  .stars--aside {
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                  }
+                  .checked {
+                    color: var(--primary);
+                  }
+
+/* SUBMAIN   SUBMAIN   SUBMAIN   SUBMAIN   SUBMAIN  */
 
 #submain{
   display: flex;
@@ -346,7 +471,7 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   width: 50%;
-  
+  margin-right: 5rem;
 }
 
 #box-two{
@@ -360,20 +485,67 @@ aside {
 .big-card{
   width: 350px;
   height: 450px;
-  background: salmon;
+  /* background: salmon; */
 }
 
 .small-card{
   width: 350px;
   height: 250px;
-  background: rgb(252, 165, 156);
+  /* background: rgb(252, 165, 156); */
 }
+
+.card-activite {
+  display: flex;
+  flex-flow: row wrap;
+  height: 225px;
+  border-radius: 25px;
+  text-decoration: none;
+  /* margin-bottom: 30px; */
+}
+
+.card-activite.small{
+  height: 200px;
+}
+
+.card-activite img{
+  width: 350px;
+  height: 170px;
+  object-fit: cover;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.card-activite.small img{
+  height: 120px;
+}
+
+.notredame img {
+  object-fit: none;
+  object-position: 50% 22%;
+}
+
+.p-activite {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.cardbig{
+  width: 320px;
+  height: 450px;
+}
+.cardbig img{
+  width: 320px;
+  height: 400px;
+}
+
+/* FOOTER   FOOTER   FOOTER   FOOTER  */
 
 .table {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 2rem;
   max-width: 70%;
   padding-bottom: 2rem;
 }
