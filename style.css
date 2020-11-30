@@ -832,7 +832,69 @@ aside {
   }
 } 
 
-@media screen and (max-width: 382px) {
+@media screen and (max-width: 375px) {
+  body {
+    background-color: rgb(115, 219, 245);    /* phone background */
+  }
+  #main, #submain, .table{
+    margin: auto 0;
+  }
+
+  #aside, #gallery{
+    max-width: 377px;
+  }
+
+  #aside-title{
+    padding-bottom: 1rem;
+  }
+
+  #gallery{
+    background-color: rgb(218, 214, 214);
+  }
+  .gallery-title{
+    font-size: 1.5rem;
+    padding-bottom: .3rem;
+  }
+  .gallery-card{
+    display: flex;
+   flex-flow: column wrap;
+   justify-content: space-between;
+   flex-shrink: 2;
+    margin: 0;
+    width: 365px;
+    height: 245px;
+    overflow: hidden;
+  }
+
+  .card{
+    width: 345px;
+    height: 265px;
+  }
+
+  .card.card-shadow{
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  .stars{
+    padding-top: .5rem;
+  }
+
+  .aside-card{
+    margin-top: 0;
+    text-align: center;
+    width: 345px;
+    height: 200px;
+    overflow: hidden;
+  }
+  .card-aside.card-shadow{
+    margin: 0;
+  }
+
+  .card-aside-body{
+    padding-left: 0;
+  }
+
   .search{
     text-align: center;
     padding-right: 3.5rem;
@@ -841,18 +903,13 @@ aside {
     display: none;
   }
   input#search{
+    max-width: 240px;
     border-left: 2px solid var(--grey);
     border-radius: 10px;
   }
 }
 
-@media screen and (max-width: 357px) {
-  input#search{
-    max-width: 240px;
-  } 
- }
-
- @media screen and (max-width: 339px) {
+ @media screen and (max-width: 280px) {
   .galaxy-fold{
     display: block;
     text-align: center;
