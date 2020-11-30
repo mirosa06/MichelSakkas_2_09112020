@@ -253,7 +253,7 @@ i.fas.fa-info{
 #main{
   display: flex;
   flex-flow: row wrap;
-  padding-bottom: 100px;
+  padding-bottom: 2rem;
 }
 
 #gallery, aside, footer{
@@ -364,6 +364,8 @@ i.fas.fa-info{
   color: var(--primary);
 }
 
+/* ASIDE  ASIDE  ASIDE  ASIDE  ASIDE  ASIDE */
+
 aside {
   
   padding: 0;
@@ -395,65 +397,65 @@ aside {
   margin-top: 30px;
 }
 
-                  /* ASIDE CARD */
-                  .card-aside {
-                    display: flex;
-                    margin: 20px 20px;
-                    background: white;
-                    border-radius: 25px;
-                    text-decoration: none;
-                  }
-                  
-                  .card-aside-container{
-                    display: flex;
-                    margin-right: 25px;
-                    height: 150px;
-                    width: 360px;
-                  }
-                  
-                  .card-aside-image {
-                    max-width: 150px;
-                    max-height: 150px;
-                    object-fit: cover;
-                    margin: 8px;
-                    border-top-left-radius: 22px;
-                    border-bottom-left-radius: 22px;
-                  }
-                  
-                  img.card-aside-image--portrait {
-                    width: 150px; 
-                    height: 88%;
-                  }
-                  
-                  .card-aside-body {
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: space-around;
-                    padding-left: 15px;
-                    padding-top: 20px;
-                  }
-                  
-                  .card-aside-body p {
-                    margin: 0;
-                    padding: 0;
-                  }
-                  
-                  .card-aside-title {
-                    font-size: 16px;
-                    font-weight: 800;
-                  }
-                  
-                  .card-aside-body--price {
-                    padding-bottom: 25px;
-                  }
-                  
-                  .stars--aside {
-                    padding-top: 20px;
-                    padding-bottom: 10px;
-                  }
-                  .checked {
-                    color: var(--primary);
-                  }
+  /* ASIDE CARD */
+  .card-aside {
+    display: flex;
+    margin: 20px 20px;
+    background: white;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  
+  .card-aside-container{
+    display: flex;
+    margin-right: 25px;
+    height: 150px;
+    width: 360px;
+  }
+  
+  .card-aside-image {
+    width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    margin: 8px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+  }
+  
+  img.card-aside-image--portrait {
+    height: 88%;
+    flex: 1 0 150px;
+  }
+  
+  .card-aside-body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+  
+  .card-aside-body p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card-aside-title {
+    font-size: 16px;
+    font-weight: 800;
+  }
+  
+  .card-aside-body--price {
+    padding-bottom: 25px;
+  }
+  
+  .stars--aside {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .checked {
+    color: var(--primary);
+  }
 
 /* SUBMAIN   SUBMAIN   SUBMAIN   SUBMAIN   SUBMAIN  */
 
@@ -576,12 +578,12 @@ aside {
 }
 
 /* MEDIA QUERIES  MEDIA QUERIES  MEDIA QUERIES  MEDIA QUERIES  MEDIA QUERIES */
-    
+
 @media screen and (min-width: 1261px) {
-    body{
-      background-color: WHITE;     /* computer background */
-    }      
-  }
+  body{
+    background-color: WHITE;     /* computer background */
+  }      
+}   
 
   @media screen and (max-width: 1000px) {
   
@@ -647,8 +649,12 @@ aside {
       background-color: lightblue;
     }
 
-    #header, #main, #submain, .table{
+    #main, #submain, .table{
       margin: auto 2rem;
+    }
+
+    header{
+      margin: auto 1rem;
     }
   
     nav {
@@ -720,6 +726,11 @@ aside {
     body{
       background-color:white;   /* tablet background */
     }
+
+    /* #header, #main, #submain, .table{
+      margin: auto 2rem;
+    } */
+
     h1{
       font-size: 1.1rem;
     }
@@ -765,8 +776,19 @@ aside {
       flex-flow: row wrap;
       width: 100vw;
     }
+
+    /* .table{
+      display: inline-flex;
+      flex-direction: column;
+    } */
+
+    footer{
+      display: inline-flex;
+    }
+
     .table {
-      max-width: 100%;
+      flex-direction: column;
+      /* max-width: 100%; */
       padding-left: 1rem;
     }
     .table-header{
@@ -782,8 +804,31 @@ aside {
     background-color: purple;    /* phone background */
   }
 
-  .table{
-    flex-direction: column;
+  header{
+    padding: 1.5rem 2rem;
+  }
+
+  input#search{
+    max-width: 200px;
+  } 
+
+  #gallery{
+    width: 100vw !important;
+  }
+
+  #gallery-cards{
+    width: 391px;
+  }
+
+  aside {
+    margin-left: 0;
+    margin-bottom: 2rem;
+    max-width: 391px;
+    order: -1;
+  }
+  .card-aside-container{
+    margin-right: 0;
+    width: 320px;
   }
 } 
 
@@ -818,7 +863,4 @@ aside {
     padding: 10px;
     border-radius: 12px;
   }
-  input#search{
-    max-width: 200px;
-  } 
 }
