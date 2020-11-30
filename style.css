@@ -114,40 +114,49 @@ nav, .btn{
   padding-bottom: 2rem;
 }
 
-.search, .search input, .search label, #rechercher-texte{
+.search, .search::before, .search input, #rechercher-texte{
   line-height: 3rem;
 }
 
-label.fas.fa-map-marker-alt{
-  line-height: 2.9rem;
-  padding: 0 1rem;
-  padding-bottom: 2px;
-  margin-right: -4px;
+.search::before{
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: '\f3c5';
+  font-weight: 700;
+  padding: 0 15px;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  color: var(--deepblue);
   background-color: var(--grey);
   border: 1px solid var(--grey);
-}
-
-.fa-map-marker-alt{
-  font-size: 1.1rem;
-}
-
-input#search::placeholder{
-  font-weight: 700;
-  color: var(--deepblue)  !important;
-  opacity: 1;
+  z-index: 5;
 }
 
 input#search{
+  position: relative;
   font-size: 1rem;
-  padding-left: .7rem;
+  padding: 0;
+  padding-left: 3.1rem;
   width: 280px !important;
   border-top: 1px solid var(--grey);
   border-bottom: 1px solid var(--grey);
   border-right: none;
   border-left: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px
 }
+
+
+
+input#search::placeholder{
+  font-weight: 700;
+  color: var(--deepblue);
+  opacity: 1;
+}
+
+
+
+
 
 #rechercher-texte{
   margin-left: -13px;
@@ -836,12 +845,14 @@ aside {
   body {
     background-color: rgb(115, 219, 245);    /* phone background */
   }
-  #main, #submain, .table{
-    margin: auto 0;
+
+  #rechercher{
+    margin-left: -12px;
   }
 
-  #aside, #gallery{
-    max-width: 377px;
+  #main, #submain, .table{
+    margin: auto 12px;
+    width: 375px;
   }
 
   #aside-title{
@@ -853,7 +864,7 @@ aside {
   }
   .gallery-title{
     font-size: 1.5rem;
-    padding-bottom: .3rem;
+    padding: 1rem 30px;
   }
   .gallery-card{
     display: flex;
@@ -903,7 +914,7 @@ aside {
     display: none;
   }
   input#search{
-    max-width: 240px;
+    max-width: 238px;
     border-left: 2px solid var(--grey);
     border-radius: 10px;
   }
