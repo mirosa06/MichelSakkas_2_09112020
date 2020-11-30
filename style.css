@@ -846,6 +846,10 @@ aside {
     background-color: rgb(115, 219, 245);    /* phone background */
   }
 
+  header{
+    margin-right: 0;
+  }
+
   #rechercher{
     margin-left: -12px;
   }
