@@ -43,7 +43,6 @@ h1{
   padding-top: .4rem;
 }
 
-
 #header-top {
   display: flex;
 }
@@ -654,8 +653,8 @@ aside {
   } 
 
   @media screen and (max-width: 600px) {
-    body{
-      background-color: lightblue;
+    html{
+      background-color: rgb(167, 229, 250) !important;
     }
 
     #main, #submain, .table{
@@ -676,7 +675,6 @@ aside {
   
     .lien-mobile{
       display: flex;
-      /* flex-wrap: wrap; */
       justify-content: space-around;
       padding-top: 1.5rem;
     }
@@ -703,9 +701,8 @@ aside {
       border-top: none;
     }
   
-    input#search{
-      position: relative;
-      width: 280px;
+    .search{
+      margin-bottom: 0 !important;
     }
     
     i.fas.fa-search{
@@ -724,7 +721,7 @@ aside {
       color: white;
       background-color: var(--primary);
       border: 1px solid var(--grey);
-      z-index: 5;
+      z-index: 9;
     }
   }
     
@@ -735,9 +732,7 @@ aside {
   }
 
   @media screen and (min-width: 481px) and (max-width: 780px) {
-    body{
-      background-color:white;   /* tablet background */
-    }
+    
 
     h1{
       font-size: 1.1rem;
@@ -785,26 +780,18 @@ aside {
       width: 100vw;
     }
 
-    /* .table{
-      display: inline-flex;
-      flex-direction: column;
-    } */
-
     footer{
-      display: inline-flex;
+      display: flex;
     }
 
-    .table {
-      flex-direction: column;
-      /* max-width: 100%; */
-      padding-left: 1rem;
+    .table{
+      flex-flow: row wrap;
     }
+    
     .table-header{
       font-size: 1rem;
     }
-    .table-col{
-      justify-content: space-between;
-    }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -847,10 +834,6 @@ aside {
 
   header{
     margin-right: 0;
-  }
-
-  .search::after{
-    margin-left: -1.5rem;
   }
 
   #main, #submain, .table{
