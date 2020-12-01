@@ -712,16 +712,19 @@ aside {
       display: inline;
       color: white;
     }
-  
-    #rechercher{
+
+    .search::after{
       position: absolute;
-      line-height: 2rem;
-      /* margin-top: 5px; */
-      margin-left: -8px;
-      padding: 9px 18px;
+      font-family: "Font Awesome 5 Free";
+      content: '\f002';
+      font-weight: 700;
+      margin-right: -1rem;
+      padding: 0 15px;
+      border-radius: 12px;
+      color: white;
       background-color: var(--primary);
-      border: none;
-      border-radius: 10px;
+      border: 1px solid var(--grey);
+      z-index: 5;
     }
   }
     
@@ -735,10 +738,6 @@ aside {
     body{
       background-color:white;   /* tablet background */
     }
-
-    /* #header, #main, #submain, .table{
-      margin: auto 2rem;
-    } */
 
     h1{
       font-size: 1.1rem;
@@ -850,8 +849,8 @@ aside {
     margin-right: 0;
   }
 
-  #rechercher{
-    margin-left: -18px;
+  .search::after{
+    margin-left: -1.5rem;
   }
 
   #main, #submain, .table{
@@ -914,9 +913,7 @@ aside {
     text-align: center;
     padding-right: 3.5rem;
   }
-  i#marker.fas.fa-map-marker-alt{
-    display: none;
-  }
+ 
   input#search{
     max-width: 238px;
     border-left: 2px solid var(--grey);
