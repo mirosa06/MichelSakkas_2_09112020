@@ -109,6 +109,7 @@ nav, .btn{
 }
 
 .search{
+  display: flex;
   padding: 1.5rem 0;
   padding-bottom: 2rem;
 }
@@ -157,7 +158,7 @@ input#search::placeholder{
 
 
 
-#rechercher-texte{
+button#rechercher-texte{
   margin-left: -13px;
   padding: 1px 1rem;
   background-color: var(--primary);
@@ -597,8 +598,6 @@ aside {
   }
 }
 
- 
-
   @media screen and (max-width: 1000px) {
   
     ul#filtres-ul{
@@ -620,8 +619,13 @@ aside {
       background-color: rgb(158, 247, 188);   /* tablet background */
     }
   
-    #header, #main, #submain, .table{
+    header, #main, #submain, .table{
       margin: auto 3rem;
+    }
+
+    header{
+      padding-left: 0;
+      padding-right: 0;
     }
   
     #gallery{
@@ -654,12 +658,26 @@ aside {
       justify-content: space-between;
     }
     .table {
-      max-width: 100%;
-      justify-content: space-evenly;
+      max-width: 60%;
+      min-width: 670px;
+      justify-content: space-between;
     }
   } 
 
   @media screen and (max-width: 780px) {
+
+    .search{
+      padding-bottom: .8rem;
+    }
+
+    ul#filtres-ul{
+      padding-top: 0;
+    }
+
+    #info{
+      padding-top: 0;
+    }
+
     #box-wrapper{
       display: flex;
       flex-flow: column wrap;
@@ -674,6 +692,12 @@ aside {
     .card-activite{
       padding-bottom: 2rem;
     }
+  
+    .table{
+      margin-left: 3rem;
+      max-width: 680px;
+    }
+
   }
 
   @media screen and (max-width: 600px) {
@@ -693,7 +717,7 @@ aside {
       border: none;
     }
     
-    .liens, #rechercher-texte{
+    .liens, #rechercher-texte {
     display: none;
     }
   
@@ -727,6 +751,7 @@ aside {
   
     .search{
       margin-bottom: 0 !important;
+      
     }
     
     i.fas.fa-search{
@@ -734,8 +759,7 @@ aside {
       color: white;
     }
 
-    .search::after{
-      position: absolute;
+    button.loupe{
       font-family: "Font Awesome 5 Free";
       content: '\f002';
       font-weight: 700;
@@ -747,6 +771,25 @@ aside {
       border: 1px solid var(--grey);
       z-index: 9;
     }
+
+    button#rechercher-texte{
+      margin-left: -13px;
+      padding: 1px 1rem;
+      background-color: var(--primary);
+      font-size: 1rem;
+      font-weight: 700;
+      color: white;
+      border: none;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+
+
+
+
+
+
   }
     
   @media screen and (max-width: 500px) {
@@ -780,7 +823,7 @@ aside {
     }
 
     #info{
-      margin-top: 1.5rem;
+      margin-top: .5rem;
     }
     #gallery{
       width: 100vw;
@@ -828,7 +871,7 @@ aside {
   }
 
   input#search{
-    max-width: 200px;
+    max-width: auto;
   } 
 
   #gallery{
@@ -864,6 +907,21 @@ aside {
     margin: auto 12px;
     width: 375px;
   }
+
+  h1{
+    font-size: 1rem;
+  }
+
+  .search{
+    text-align: center;
+    padding-right: 3.5rem;
+  }
+ 
+  /* input#search{
+    max-width: auto;
+    border-left: 2px solid var(--grey);
+    border-radius: 10px;
+  } */
 
   #aside-title{
     padding-bottom: 1rem;
@@ -914,17 +972,6 @@ aside {
 
   .card-aside-body{
     padding-left: 0;
-  }
-
-  .search{
-    text-align: center;
-    padding-right: 3.5rem;
-  }
- 
-  input#search{
-    max-width: 238px;
-    border-left: 2px solid var(--grey);
-    border-radius: 10px;
   }
 }
 
