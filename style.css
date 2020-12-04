@@ -630,57 +630,6 @@ aside {
   }
 }
 
-  @media screen and (max-width: 1000px) {
-  
-    ul#filtres-ul{
-      display: flex;
-      flex-flow: row wrap;
-      /* align-items: auto; */
-    }
-    ul#filtres-ul li:nth-child(1){
-      flex-basis: 100%;
-    }
-    li.filtre-element{
-      margin-bottom: 1rem;
-    }
-  
-  }
-
-  @media screen and (min-width: 781px) and (max-width: 1480px) {
-    body{
-      background-color: rgb(158, 247, 188);   /* tablet background */
-    }
-  
-    header, #main, #submain, .table{
-      margin: auto 3rem;
-    }
-
-    header{
-      padding-left: 0;
-      padding-right: 0;
-    }
-  
-    #gallery{
-      width: 100vw;
-      margin-top: 2rem;
-    }
-    #aside{
-      margin-left: 0;
-      order: -1;
-      padding-bottom: 2rem;
-    }
-  
-    #aside-cards{
-      flex-flow: row wrap;  
-      justify-content: space-around;
-      
-    }
-  
-    #box-wrapper{
-      display: flex;
-      flex-direction: column;
-    }
-
     @media screen and (min-width: 781px) and (max-width: 1480px) {
     body{
       background-color: rgb(158, 247, 188);   /* tablet background */
@@ -729,26 +678,43 @@ aside {
       margin-right: 0;
       padding-bottom: 3rem;
     }
-    
-    .table {
-      max-width: 60%;
-      min-width: 670px;
-      justify-content: space-between;
-    }
-  }
 
     .table {
-      max-width: 60%;
-      min-width: 670px;
-      justify-content: space-between;
-    }
+      max-width: 100%;
+     }
+     
   } 
+
+  @media screen and (max-width: 1000px) {
+  
+    ul#filtres-ul{
+      display: flex;
+      flex-flow: row wrap;
+      /* align-items: auto; */
+    }
+    ul#filtres-ul li:nth-child(1){
+      flex-basis: 100%;
+    }
+    li.filtre-element{
+      margin-bottom: 1rem;
+    }
+  
+  }
+
 /*  MEDIA QUERY mxw780   MEDIA QUERY mxw780   MEDIA QUERY mxw780   MEDIA QUERY mxw780 */
-  @media screen and (max-width: 779px){
+  @media screen and (max-width: 780px){
+
     body{
       background-color: blue;
     } 
-    
+
+    .table{
+      flex-flow: row wrap;
+      max-width: 100%;
+      padding-right: 2rem;
+    }
+  
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -947,6 +913,11 @@ aside {
     margin-right: 0;
     width: 320px;
   }
+
+.table {
+  flex-direction: column;
+}
+
 } 
 
 @media screen and (max-width: 375px) {
