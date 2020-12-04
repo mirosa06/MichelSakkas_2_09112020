@@ -748,6 +748,18 @@ aside {
     body{
       background-color: blue;
     } 
+    #box-wrapper{
+      flex-direction: column;
+    }
+    #box-one, #box-two{
+     display: inline-flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+    #box-one{
+      margin-right: 0;
+      padding-bottom: 2rem;
+    }
     
 }
 
