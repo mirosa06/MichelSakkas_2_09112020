@@ -55,10 +55,6 @@ nav{
   width: 40%;
 }
 
-.liens, .lien-mobile{
-  display: flex;
-}
-
 .logo {
   width: 60%;
 }
@@ -66,8 +62,12 @@ nav{
 .liens{
   justify-content: flex-end;
 }
+ul.liens{
+  display: flex;
+  flex-direction: row;
+}
 
-.liens, a, .btn{
+.liens, a, .btn-inscription{
   text-decoration: none;
 }
 
@@ -86,25 +86,21 @@ nav{
   color:var(--deepblue);
 }
 
-.btn {
+.btn-inscription {
   color:var(--primary);
   font-weight: 700;
 }
 
-.liens li, .lien-mobile li{
+.liens li, li{
   list-style: none;
   padding-right: 2rem;
 }
 
-.lien-mobile li{
-  padding-right: 0;
-}
-
-nav, .btn{
+nav, .btn-inscription{
   padding-top: 1.1rem;
 }
 
-.lien-mobile, i.fas.fa-search {
+i.fas.fa-search {
   display: none;
 }
 
@@ -736,15 +732,21 @@ aside {
   nav {
     border: none;
   }
+
+  .activite {
+    margin-right: 50px;
+   }
+   
   
-  .liens, #rechercher-texte {
+  #rechercher-texte {
   display: none;
   }
 
-  .lien-mobile{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1.5rem;
+  .liens{
+    justify-content: space-evenly;
+    padding-right: 3.3rem;
+    padding-top: 2.9rem;
+    /* text-align: center; */
   }
 
   li.active{
@@ -761,7 +763,7 @@ aside {
     padding-left: 25%;
     flex-grow: 2;
   }
-  .btn{
+  .btn-inscription{
     justify-content: flex-end;
   }
 
@@ -780,12 +782,13 @@ aside {
   }
 
   #loupe::before{
+    position: absolute;
     font-family: "Font Awesome 5 Free";
     content: '\f002';
     font-weight: 700;
     margin-left: -10px;
-    padding: 16px 16px;
-    padding-left: 23px;
+    padding: 0 16px;
+    
     border: 0;
     border-radius: 12px;
     color: white;
@@ -886,6 +889,10 @@ aside {
     padding: 1.5rem 2rem;
   }
 
+  .activite {
+    margin-right: 0;
+   }
+
   input#search{
     max-width: auto;
   } 
@@ -937,12 +944,15 @@ aside {
     text-align: center;
     padding-right: 3.5rem;
   }
- 
-  /* input#search{
-    max-width: auto;
-    border-left: 2px solid var(--grey);
-    border-radius: 10px;
-  } */
+
+  #loupe::before{
+    padding-bottom: 3px;
+  }
+
+  li.filtre-element:nth-child(5) > a:nth-child(2) {
+    font-size: 19px;
+   }
+   
 
   #aside-title{
     padding-bottom: 1rem;
