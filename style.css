@@ -637,6 +637,10 @@ aside {
       padding-left: 0;
       padding-right: 0;
     }
+
+    #filtres-ul{
+      flex-flow: row wrap;
+    }
   
     #gallery{
       width: 100vw;
