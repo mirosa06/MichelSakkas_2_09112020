@@ -638,9 +638,6 @@ img.card-aside-image--portrait {
 	nav {
 		border: none;
 	}
-	.activite {
-		margin-right: 50px;
-	}
 	#rechercher-texte {
 		display: none;
 	}
@@ -720,7 +717,39 @@ img.card-aside-image--portrait {
 		border-radius: 20px;
 		margin-left: 0;
 		flex-grow: 1;
-	}
+  }
+
+  #activites {
+    margin-bottom: 0;
+  }
+
+  #activites.activites__list {
+    padding-top: 0;
+  }
+  
+  .activite {
+    width: 85vw;
+    height: 13.125rem;
+  }
+
+  #activites h2 {
+    margin: 15px 15px 30px;
+  }
+  
+  .activites__group {
+    align-items: center;
+    width: inherit;
+    height: auto;
+  }
+
+  .activite > img{
+    height: 160px;
+  }
+
+  .activite1, .activite2, .activite3, .activite4, .activite5, .activite6 {
+    margin-bottom: 1.8rem;
+  }
+
 	.table {
 		flex-flow: row wrap;
 		align-items: center;
