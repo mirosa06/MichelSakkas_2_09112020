@@ -688,7 +688,21 @@ img.card-aside-image--portrait {
 	}
 	button#rechercher-texte {
 		visibility: hidden;
-	}
+  }
+  
+  #filtres-ul{
+    flex-direction: column;
+  }
+
+  #filtres-ul {
+    align-items: baseline;
+   }
+   
+   #filtre-titre {
+    padding-bottom: 0;
+   }
+   
+
 	.card {
 		display: inline-flex;
 		flex-direction: column;
@@ -700,11 +714,17 @@ img.card-aside-image--portrait {
 		border-radius: 25px;
 		text-decoration: none;
 		color: var(--deepblue);
-	}
+  }
+  
+  h2.gallery-title {
+    padding-bottom: 0;
+   }   
+
 	.gallery-card {
 		width: 23.5rem;
 	}
 	#gallery {
+    background-color: #ffffff;
 		display: flex;
 		flex-flow: column wrap;
 		border-radius: 20px;
@@ -718,6 +738,14 @@ img.card-aside-image--portrait {
 		margin-left: 0;
 		flex-grow: 1;
   }
+
+  #aside-title {
+    padding-bottom: 0;
+   }
+
+   div.aside-card:nth-child(1) {
+    margin-top: 0;
+   }
 
   #activites {
     margin-bottom: 0;
