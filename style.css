@@ -649,7 +649,12 @@ h2.titre {
 	#plus {
 		padding-left: 16px;
 		padding-bottom: 0;
-	}
+  }
+  
+  #plus.gallery-title {
+    margin-left: .7rem !important;
+  }
+
 	header {
 		margin: auto 1rem;
 	}
