@@ -24,7 +24,6 @@
       crossorigin="anonymous"
       defer
     ></script>
-
     <title>Reservia</title>
   </head>
   <body>
@@ -38,20 +37,18 @@
         <nav>
           <ul class="liens">
             <li class="active">
-              <a class="hebergement" href="#">Hébergements</a>
+              <a class="hebergement" href="#gallery">Hébergements</a>
             </li>
-            <li class="nav-activite"><a href="#">Activités</a></li>
+            <li class="nav-activite"><a href="#activites">Activités</a></li>
           </ul>
         </nav>
         <a class="btn-inscription" href="#">S'inscrire</a>
       </div>
-
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p id="soustitre">En plein centre ville ou en pleine nature</p>
-
       <div class="search">
         <input type="search" id="search" placeholder="Marseille, France" />
-        <div id="loupe" type="submit"></div>
+        <div id="loupe"></div>
         <button class="loupe" id="rechercher-texte" type="submit">
           Rechercher
         </button>
@@ -96,7 +93,9 @@
     </header>
     <section id="main">
       <div id="gallery">
-        <h2 class="gallery-title">Hébergements à Marseille</h2>
+        <h2 class="gallery-title">
+          <a href="#header-top">Hébergements à Marseille</a>
+        </h2>
         <div id="gallery-cards">
           <div class="gallery-card">
             <div class="card card-shadow" onclick="location.href='#'">
@@ -202,7 +201,9 @@
             </div>
           </div>
         </div>
-        <div class="gallery-title" id="plus">Afficher plus</div>
+        <div class="gallery-title" id="plus">
+          <a href="#header-top">Afficher plus</a>
+        </div>
       </div>
       <aside id="aside">
         <h2 id="aside-title">
@@ -290,10 +291,9 @@
         </div>
       </aside>
     </section>
-
     <!-- Activites -->
     <section id="activites" class="activites__list">
-      <h2 class="titre">Activités à Marseille</h2>
+      <h2 class="titre"><a href="#header-top"> Activités à Marseille</a></h2>
       <div class="activites__group">
         <a class="activite activite1">
           <img
@@ -328,6 +328,7 @@
         <a class="activite activite5">
           <img
             src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt="Notre-Dame-De-La-Garde"
           />
           <div class="activite__title">Notre-Dame-De-La-Garde</div>
         </a>
@@ -340,7 +341,6 @@
         </a>
       </div>
     </section>
-
     <footer>
       <div class="table">
         <div class="table-col">
