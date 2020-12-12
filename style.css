@@ -506,9 +506,10 @@ img.card-aside-image--portrait {
 }
 
 h2.titre {
-	display: flex !important;
-	width: 100%;
-	padding-left: 30px;
+	display: block;
+	max-width: 97vw;
+	margin-left: 0;
+	padding-left: 30px !important;
 	padding-bottom: 1.5rem;
 }
 
@@ -735,9 +736,13 @@ h2.titre {
 		text-decoration: none;
 		color: var(--deepblue);
 	}
+
 	h2.gallery-title {
+		margin-left: .5rem;
+		font-size: 25px;
 		padding-bottom: 0;
-	}
+	 }
+	 
 	.gallery-card {
 		width: 23.5rem;
 	}
@@ -769,6 +774,7 @@ h2.titre {
 	#aside-title {
 		padding-bottom: 0;
 		padding-left: 1rem;
+		margin-left: .5rem;
 		width: 100%;
 	}
 	div.aside-card {
@@ -783,8 +789,9 @@ h2.titre {
 	#activites {
 		margin-bottom: 0;
 	}
-	h2.titre {
-		padding-left: 15px;
+	 h2.titre {
+		 max-width: 97vw;
+		padding-left: 1rem !important;
 	}
 	#activites.activites__list {
 		padding-top: 0;
