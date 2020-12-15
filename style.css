@@ -1,4 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400; 500;600;700&display=swap');
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf)
+    format('truetype');
+}
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf)
+    format('truetype');
+}
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCP.ttf)
+    format('truetype');
+}
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf)
+    format('truetype');
+}
 :root {
   --primary: #0065fc;
   --secondary: #deebff;
