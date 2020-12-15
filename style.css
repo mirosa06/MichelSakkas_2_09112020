@@ -659,7 +659,7 @@ h2.titre {
   h2.gallery-title,
   #plus {
     padding-left: 16px;
-    padding-bottom: 0;
+    padding-bottom: 2rem;
   }
 
   #plus {
@@ -840,5 +840,11 @@ h2.titre {
   }
   div.table-col:nth-child(2) {
     flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #plus {
+    padding-left: 1.7rem;
   }
 }
