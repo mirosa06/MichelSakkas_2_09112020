@@ -598,6 +598,7 @@ h2.titre {
 
   nav {
     margin-top: 6rem;
+    margin-left: 50px;
     width: auto;
     justify-content: space-between;
   }
@@ -790,6 +791,10 @@ h2.titre {
 @media screen and (max-width: 400px) {
   #plus {
     padding-left: 1.7rem;
+  }
+
+  nav {
+    margin-left: 0;
   }
 
   .btn-inscription {
